@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/styles.css">
 
 <body>
-    <script src="script.js"></script>
+     <script src="script.js"></script>
     <header>
         <h1>Nebil Ferej</h1>
         <nav>
@@ -28,30 +28,27 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <button class="toggle-details">Show Details</button>
-            <p class="details">This is project 1 description.</p>
-        </div>
-    
-        <div class="project">
-            <h3>Project 2</h3>
-            <button class="toggle-details">Show Details</button>
-            <p class="details">This is project 2 description.</p>
-        </div>
-    
-        <div class="project">
-            <h3>Project 3</h3>
-            <button class="toggle-details">Show Details</button>
-            <p class="details">This is project 3 description.</p>
-        </div>
-   
+        <div id="projectGallery"></div>
    
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p></p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <span class="error" id="messageError"></span>
+    
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
