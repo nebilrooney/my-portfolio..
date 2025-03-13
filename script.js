@@ -1,43 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const projects = [
-        {
-            title: "Project 1",
-            description: "This is the first project description.",
-            image: "project1.jpg"
-        },
-        {
-            title: "Project 2",
-            description: "This is the second project description.",
-            image: "project2.jpg"
-        },
-        {
-            title: "Project 3",
-            description: "This is the third project description.",
-            image: "project3.jpg"
-        }
+        { title: "Project 1", description: "This is the first project description.", details: "More details about Project 1." },
+        { title: "Project 2", description: "This is the second project description.", details: "More details about Project 2." },
+        { title: "Project 3", description: "This is the third project description.", details: "More details about Project 3." }
     ];
 
-    const projectGallery = document.getElementById("projectGallery");
+    const gallery = document.getElementById("projectGallery");
 
-    projects.forEach(project => {
-        const projectElement = document.createElement("div");
-        projectElement.classList.add("project");
+    projects.forEach((project, index) => {
+        const projectDiv = document.createElement("div");
+        projectDiv.classList.add("project");
 
-        projectElement.innerHTML = `
-            <img src="${project.image}" alt="${project.title}">
+        projectDiv.innerHTML = `
             <h3>${project.title}</h3>
             <p>${project.description}</p>
-            <button onclick="showDetails('${project.title}', '${project.description}')">Show Details</button>
+            <button class="toggle-btn">Show Details</button>
+            <div class="details" style="display: none;">
+                <p>${project.details}</p>
+            </div>
         `;
 
-        projectGallery.appendChild(projectElement);
+        gallery.appendChild(projectDiv);
+    });
+
+    // Add event listeners for buttons
+    document.querySelectorAll(".toggle-btn").forEach(button => {
+        button.addEventListener("click", function() {
+            const details = this.nextElementSibling;
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                this.textContent = "Hide Details";
+            } else {
+                details.style.display = "none";
+                this.textContent = "Show Details";
+            }
+        });
     });
 });
 
 
-function showDetails(title, description) {
-    alert(`${title}\n\n${description}`);
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     
