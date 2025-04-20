@@ -157,4 +157,22 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
   
   fadeElements.forEach((el) => observer.observe(el));
   
-
+  const filterButtons = document.querySelectorAll("#filterButtons button");
+  const projectItems = document.querySelectorAll(".project-item");
+  
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-category");
+  
+      projectItems.forEach((item) => {
+        const itemCategory = item.getAttribute("data-category");
+        if (category === "all" || category === itemCategory) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+  
+  
