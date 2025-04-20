@@ -148,29 +148,4 @@ body {
     border: 1px solid #444;
   }
   
-  .details-content {
-    display: none;
-    background-color:#f0f0f0;
-    color: #000000;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
-  .details-content.visible {
-    display: block;
-  }
-  
-  .dark-mode .details-content {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: 1px solid #555;
-  }
-  
-  .dark-mode .details-content.visible {
-    display: block;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: 1px solid #555;
-  }
-  
+ 

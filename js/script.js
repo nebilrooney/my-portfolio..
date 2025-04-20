@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const projects = [
-        { title: "Project 1", description: "This is the first project description.", details: "More details about Project 1." },
-        { title: "Project 2", description: "This is the second project description.", details: "More details about Project 2." },
-        { title: "Project 3", description: "This is the third project description.", details: "More details about Project 3." }
+        { title: "Online Quiz", description: "Quiez app with multiple choice.", details: "Score tracking and show the result." }, 
+        { title: "Chat app", description: "Fun and make a friend online.", details: "Talk with real people without ads." },
+        { title: "Game", description: "Play with your friend.", details: "No subscription it's free." }
     ];
 
     const gallery = document.getElementById("projectGallery");
