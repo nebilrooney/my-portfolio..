@@ -6,6 +6,12 @@ body {
     line-height: 1.6;
 }
 
+html {
+
+   scroll-behavior: smooth;
+
+}
+
 header {
     background-color: #333;
     color: white;
@@ -76,3 +82,19 @@ footer {
 body {
     padding-bottom: 80px;
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #1f1f1f;
+  }
+  
+  .dark-mode a {
+    color: #90caf9;
+  }
+  
+  
