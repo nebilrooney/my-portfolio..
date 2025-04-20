@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const projects = [
         { title: "Online Quiz", description: "Quiez app with multiple choice.", details: "Score tracking and show the result." }, 
         { title: "Chat app", description: "Fun and make a friend online.", details: "Talk with real people without ads." },
-        { title: "Game", description: "Play with your friend.", details: "No subscription it's free." }
-        {title: "Learn to cook", description:"new types of food",details:"Fast food when you are busy"}
+        { title: "Game", description: "Play with your friend.", details: "No subscription it's free." },
+        { title: "Learn to cook", description:"new types of food",details:"Fast food when you are busy"},
     ];
 
     const gallery = document.getElementById("projectGallery");

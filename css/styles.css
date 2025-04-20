@@ -83,6 +83,24 @@ body {
     padding-bottom: 80px;
 }
 
+#contactForm button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  #contactForm button:hover {
+    background-color: #218838;
+  }
+  
+
+
 .dark-mode {
     background-color: #121212;
     color: #223d88e3;
